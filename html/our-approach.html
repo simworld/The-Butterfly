@@ -37,16 +37,18 @@
 
 <!-- VIDEO BACKGROUND -->
 <div class="bloc-video">
-
-    <video autoplay loop muted playsinline>
-        <source src="../assets/videos/playdoh.mp4" type="video/mp4">
+    <video autoplay loop muted playsinline id="video">
+        <source src="../assets/videos/pupils-low.mp4" type="video/mp4">
     </video>
     <div class="content-video">
-        <!-- <img src="assets/images/logo.png" alt="Logo" style="height: 100px;"> -->
         <div class="content-text">
-            <!-- <h1>River</h1> -->
-            <img src="../assets/images/logo.webp" alt="Logo" class="video-logo">
+            <img src="../assets/images/logo.webp" alt="The Butterfly Logo" class="video-logo">
         </div>
+
+        <div class="video-button">
+            <i class="fa-solid fa-pause" id="playPauseButton" onclick="togglePlayPause()"></i>
+        </div>
+
         <div class="content-button">
             <button type="button" class="btn">Contact Us</button>
         </div>
@@ -151,6 +153,7 @@
 
 <script src="../assets/js/nav.js"></script>
 <!-- <script src="../assets/js/slider.js"></script> -->
+<script src="../assets/js/video-controls.js"></script>
 <script src="../assets/js/parallax.js"></script>  
 
 </body>

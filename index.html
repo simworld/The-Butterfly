@@ -14,20 +14,29 @@
 <!-- OPENING HEADER -->
 <header>
     <nav>
-        <a href="#">
-            <img src="assets/images/logo-no-img.png" alt="Logo">
+        <a href="index.html">
+            <img src="assets/images/logo-no-img.png" alt="The Butterfly Logo with no Image">
         </a>
             <div class="menutoggle" onclick="togglemenu();">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-x"></i>
             </div>
+            <!-- <ul class="navigation">
+                <li><a href="index.html" tabindex="0">Home</a></li>
+                <li><a href="html/our-approach.html" tabindex="0">Our Approach</a></li>
+                <li><a href="html/staff.html" tabindex="0">Staff</a></li>
+                <li><a href="html/rooms.html" tabindex="0">Rooms</a></li>
+                <li><a href="html/faq.html" tabindex="0">FAQ</a></li>
+                <li><a href="html/contact.html" tabindex="0">Contact Us</a></li>
+            </ul> -->
+
             <ul class="navigation">
-                <li><a href="#">Home</a></li>
-                <li><a href="html/our-approach.html">Our Approach</a></li>
-                <li><a href="html/staff.html">Staff</a></li>
-                <li><a href="html/rooms.html">Rooms</a></li>
-                <li><a href="html/faq.html">FAQ</a></li>
-                <li><a href="html/contact.html">Contact Us</a></li>
+                <li tabindex="0"><a href="index.html">Home</a></li>
+                <li tabindex="0"><a href="html/our-approach.html">Our Approach</a></li>
+                <li tabindex="0"><a href="html/staff.html">Staff</a></li>
+                <li tabindex="0"><a href="html/rooms.html">Rooms</a></li>
+                <li tabindex="0"><a href="html/faq.html">FAQ</a></li>
+                <li tabindex="0"><a href="html/contact.html">Contact Us</a></li>
             </ul>
     </nav>
 </header>
@@ -35,19 +44,28 @@
 
 <!-- VIDEO BACKGROUND -->
 <div class="bloc-video">
-    <video autoplay loop muted playsinline>
-
+    <video autoplay loop muted playsinline id="video">
         <source src="assets/videos/pupils-low.mp4" type="video/mp4">
     </video>
     <div class="content-video">
         <div class="content-text">
-            <img src="assets/images/logo.webp" alt="Logo" class="video-logo">
+            <img src="assets/images/logo.webp" alt="The Butterfly Logo" class="video-logo">
         </div>
+
+        <div class="video-button">
+            <i class="fa-solid fa-pause" id="playPauseButton" onclick="togglePlayPause()" tabindex="0"></i>
+        </div>
+
         <div class="content-button">
             <button type="button" class="btn">Contact Us</button>
         </div>
+
     </div>
 </div>
+
+<!-- <div class="video-buttons">
+    <div id="playPauseButton" onclick="toggleVideo()"><i class="fa-solid fa-play-pause fa-2xl"></i></div>
+</div> -->
 
 <!-- PARALLAX -->
 <div class="parallax-container">
@@ -62,7 +80,7 @@
         <div class="parallax-content-img">
             <div class="parallax-image">
                 <img src="assets/images/homepage/welcome-to-the-butterlfy.webp"
-                alt=""
+                alt="Teacher with Kid"
                 srcset="assets/images/homepage/welcome-to-the-butterlfy-desktop.webp 900w,
                         assets/images/homepage/welcome-to-the-butterlfy-tablet.webp 600w,
                         assets/images/homepage/welcome-to-the-butterlfy-mobile.webp 300w"
@@ -86,7 +104,7 @@
         <div class="parallax-content-img">
             <div class="parallax-image">
                 <img src="assets/images/homepage/playdoh.webp"
-                alt=""
+                alt="Playdoh and wood letters"
                 srcset="assets/images/homepage/playdoh-desktop.webp 900w,
                         assets/images/homepage/playdoh-tablet.webp 600w,
                         assets/images/homepage/playdoh-mobile.webp 300w"
@@ -102,17 +120,17 @@
 
             <div class="slideshow-container">
 
-                <div class="mySlides">
+                <div class="my-slide">
                     <q>The Butterfly - Crèche & Childcare has been an absolute blessing for our family. The caring and dedicated staff have created a warm and nurturing environment where our child feels safe and loved.</q>
                     <p class="author">- Sarah</p>
                 </div>
                 
-                <div class="mySlides">
+                <div class="my-slide">
                     <q>Choosing The Butterfly - Crèche & Childcare was the best decision we made for our child. The staff goes above and beyond to ensure every child's needs are met and their individuality is celebrated.</q>
                     <p class="author">- John</p>
                 </div>
                 
-                <div class="mySlides">
+                <div class="my-slide">
                     <q>As working parents, finding a trustworthy and loving childcare centre was our top priority. The Butterfly - Crèche & Childcare exceeded our expectations. The staff is not only highly qualified but also genuinely passionate about early childhood development.</q>
                     <p class="author">- Anna and Thomas</p>
                 </div>
@@ -123,9 +141,9 @@
                 </div>
                 
                 <div class="dot-container">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(1)" tabindex="0"></span> 
+                    <span class="dot" onclick="currentSlide(2)" tabindex="0"></span> 
+                    <span class="dot" onclick="currentSlide(3)" tabindex="0"></span> 
                 </div>
 
         </div>
@@ -137,16 +155,16 @@
 <!-- FOOTER --> 
 <footer>
 
-    <img src="assets/images/logo.webp" alt="Logo">
+    <img src="assets/images/logo.webp" alt="The Butterfly Logo for Footer">
 
     <div class="bottom-nav">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="html/our-approach.html">Our Approach</a></li>
-            <li><a href="#">Staff</a></li>
-            <li><a href="#">Rooms</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li tabindex="0"><a href="index.html">Home</a></li>
+            <li tabindex="0"><a href="html/our-approach.html">Our Approach</a></li>
+            <li tabindex="0"><a href="html/staff.html">Staff</a></li>
+            <li tabindex="0"><a href="html/rooms.html">Rooms</a></li>
+            <li tabindex="0"><a href="html/faq.html">FAQ</a></li>
+            <li tabindex="0"><a href="html/contact.html">Contact Us</a></li>
         </ul>
     </div>
 
@@ -164,9 +182,9 @@
         </ul>
 
         <div class="socials">
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f fa-3x"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter fa-3x"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in fa-3x"></i> </a>           
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" tabindex="0"><i class="fa-brands fa-facebook-f fa-3x"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter" tabindex="0"><i class="fa-brands fa-twitter fa-3x"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin" tabindex="0"><i class="fa-brands fa-linkedin-in fa-3x"></i> </a>           
         </div>
 
 
@@ -174,8 +192,10 @@
 </footer>
 
 <script src="assets/js/nav.js"></script>
-<script src="assets/js/slider.js"></script>
+<script src="assets/js/video-controls.js"></script>
 <script src="assets/js/parallax.js"></script>
+<script src="assets/js/slider.js"></script>
+
 </body>
 
 </html>

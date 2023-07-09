@@ -15,7 +15,7 @@
 <!-- OPENING HEADER -->
 <header>
     <nav>
-        <a href="#">
+        <a href="../index.html">
             <img src="../assets/images/logo-no-img.png" alt="Logo">
         </a>
             <div class="menutoggle" onclick="togglemenu();">
@@ -23,30 +23,51 @@
                 <i class="fa-solid fa-x"></i>
             </div>
 
-        <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
+        <!-- <ul class="navigation" tabindex="0">
+            <li tabindex="-1"><a href="../index.html">Home</a></li>
             <li><a href="../html/our-approach.html">Our Approach</a></li>
             <li><a href="../html/staff.html">Staff</a></li>
             <li><a href="../html/rooms.html">Rooms</a></li>
             <li><a href="../html/faq.html">FAQ</a></li>
             <li><a href="../html/contact.html">Contact Us</a></li>
+        </ul> -->
+        <ul class="navigation">
+            <li tabindex="0"><a href="../index.html">Home</a></li>
+            <li tabindex="0"><a href="../html/our-approach.html">Our Approach</a></li>
+            <li tabindex="0"><a href="../html/staff.html">Staff</a></li>
+            <li tabindex="0"><a href="../html/rooms.html">Rooms</a></li>
+            <li tabindex="0"><a href="../html/faq.html">FAQ</a></li>
+            <li tabindex="0"><a href="../html/contact.html">Contact Us</a></li>
         </ul>
+
+        <!-- <ul class="navigation">
+            <li><a href="../index.html" tabindex="0">Home</a></li>
+            <li><a href="../html/our-approach.html" tabindex="0">Our Approach</a></li>
+            <li><a href="../html/staff.html" tabindex="0">Staff</a></li>
+            <li><a href="../html/rooms.html" tabindex="0">Rooms</a></li>
+            <li><a href="../html/faq.html" tabindex="0">FAQ</a></li>
+            <li><a href="../html/contact.html" tabindex="0">Contact Us</a></li>
+        </ul> -->
+        
+        
     </nav>
 </header>
 <!-- CLOSING HEADER -->
 
 <!-- VIDEO BACKGROUND -->
 <div class="bloc-video">
-
-    <video autoplay loop muted playsinline>
+    <video autoplay loop muted playsinline id="video">
         <source src="../assets/videos/playdoh.mp4" type="video/mp4">
     </video>
     <div class="content-video">
-        <!-- <img src="assets/images/logo.png" alt="Logo" style="height: 100px;"> -->
         <div class="content-text">
-            <!-- <h1>River</h1> -->
-            <img src="../assets/images/logo.webp" alt="Logo" class="video-logo">
+            <img src="../assets/images/logo.webp" alt="The Butterfly Logo" class="video-logo">
         </div>
+
+        <div class="video-button">
+            <i class="fa-solid fa-pause" id="playPauseButton" onclick="togglePlayPause()"></i>
+        </div>
+
         <div class="content-button">
             <button type="button" class="btn">Contact Us</button>
         </div>
@@ -143,6 +164,7 @@
 
 <script src="../assets/js/nav.js"></script>
 <!-- <script src="../assets/js/slider.js"></script> -->
+<script src="../assets/js/video-controls.js"></script>
 <script src="../assets/js/parallax.js"></script>  
 
 </body>

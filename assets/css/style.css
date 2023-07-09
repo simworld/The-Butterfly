@@ -282,7 +282,9 @@ margin-bottom: auto;
     max-width: 90%; 
     height: auto;
     position: relative;
-    top: 27%;
+    /* top: 27%; */
+
+    top: 32%;
 }
 
 .parallax-content-white{
@@ -401,6 +403,15 @@ background-color: white;
     z-index: 0;
 }
 
+.video-button {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    /* transform: translate(-50%, -50%); */
+    width: 800px;
+    z-index: 0;
+}
+
 .bloc-video .content-video {
     flex-direction: column;
     /* color: #0E2936; */
@@ -462,13 +473,13 @@ background-color: white;
   }
   
   /* Slides */
-  .mySlides {
+  .my-slide {
     display: none;
     padding: 40px;
     text-align: center;
   }
 
-  /* .mySlides {
+  /* .my-slide {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -486,7 +497,7 @@ background-color: white;
     width: auto;
     margin-top: -30px;
     padding: 16px;
-    color: var(--battleship);
+    color: var(--prussian-blue);
     font-weight: bold;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
@@ -510,7 +521,8 @@ background-color: white;
   .dot-container {
       text-align: center;
       padding: 20px;
-      background: #ddd;
+      /* background: #ddd; */
+      background-color: var(--hunyadi);
   }
   
   /* The dots/bullets/indicators */
@@ -519,7 +531,8 @@ background-color: white;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    /* background-color: #bbb; */
+    background-color: var(--battleship);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -527,17 +540,25 @@ background-color: white;
   
   /* Add a background color to the active dot/circle */
   .slider .active, .dot:hover {
-    background-color: #717171;
+    /* background-color: #717171; */
+    background-color: var(--dark-slate);
+
   }
   
   /* Add an italic font style to all quotes */
   q {font-style: italic;}
   
   /* Add a blue color to the author */
-  .author {color: cornflowerblue;}
+  .my-slide .author {color: var(--dark-slate);}
 
 
  /* ACCORDIONS */
+
+ .parallax-content-white.faq h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
 
  .accordion {
     /* background-color: var(--prussian-blue); */
@@ -622,8 +643,8 @@ background-color: white;
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    background-color: var(--hunyadi);
+    color: var(--prussian-blue);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -631,7 +652,9 @@ background-color: white;
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: var(--prussian-blue);
+    color: white;
+    transition: color 0.4s ease-in;
   }
   
   .container {
@@ -798,7 +821,7 @@ footer li {
 
 
     /* SLIDER */
-.mySlides {
+.my-slide {
     /* display: none; */
     padding: 60px;
     /* text-align: center; */
@@ -887,7 +910,7 @@ footer {
 } */
 
 /* SLIDER */
-.mySlides {
+.my-slide {
     /* display: none; */
     padding: 70px;
     /* text-align: center; */
