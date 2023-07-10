@@ -53,7 +53,6 @@ header {
     /* justify-content: space-between; */
     align-items: center;
     transition: .5s;
-
 }
 
 .navigation {
@@ -76,9 +75,6 @@ nav img {
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
-/* .sticky nav ul li a {
-    color: white;
-}  */
 nav li {
     color:var(--prussian-blue);
     font-weight: bold;
@@ -109,7 +105,7 @@ nav li {
     color: var(--platinum);
 }
 
-/* Add hamburger menu styling ******************************************************/
+/* HAMBURGER MENU STYLING */
 .menutoggle {
     display: flex;
     flex-direction: column;
@@ -123,7 +119,6 @@ nav li {
 .menutoggle i {
     color: var(--prussian-blue);
     font-size: 24px;
-    /* display: none; */
 }
 
 .menutoggle .fa-solid.fa-x {
@@ -138,11 +133,6 @@ nav li {
 .menutoggle.open .fa-solid.fa-x {
     display: inline;
 }
-
-/* .menutoggle.open i {
-    transform: rotate(180deg);
-} */
-
 
 .sticky .menutoggle i, .sticky .menutoggle.open i {
     color: var(--platinum);
@@ -172,9 +162,6 @@ nav li {
     }
 }
 
-
-
-
 .navigation.open li {
     margin-bottom: 10px;
 }
@@ -184,48 +171,6 @@ nav li {
     font-size: 18px;
     text-decoration: none;
 }
-
-
-/* codepen */
-/* .sticky .navigation li a
-{
-    color: white;
-}
-header .navigation
-{
-    position: relative;
-    display: flex;
-}
-header .navigation li
-{
-    list-style: none;
-    margin-left: 30px;
-}
-header .navigation li a
-{
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1.1em;
-    transition: .5s;
-} */
-
-
-
-
-/* CONTENT */
-/* .content {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 50%;
-} */
-
-/* .content {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-} */
-
 
 /* PARALLAX  */
 
@@ -239,15 +184,14 @@ header .navigation li a
     color: var(--platinum);
 }
   
-.parallax-green,
-.parallax-white {
-position: relative;
-height: 100vh;
-overflow: hidden;
-display: flex;
-justify-content: center;
-/* margin-top: 230px; */
-flex-direction: row;
+.parallax-green, .parallax-white {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 230px; */
+    flex-direction: row;
 }
 
 .parallax-content-green {
@@ -259,8 +203,6 @@ color: #EDE7E9;
 padding: 20px;
 margin-top: auto;
 margin-bottom: auto;
-/* font-size: 18px; */
-
 }
 
 .parallax-content-img {
@@ -270,35 +212,27 @@ margin-bottom: auto;
 .parallax-image {
     display: flex;
     justify-content: center;
-  }
-  
-  /* .parallax-image img {
-    max-width: 100%; 
-    height: auto;
-    align-self: center;
-  } */
+}
   
 .parallax-image img {
     max-width: 90%; 
     height: auto;
     position: relative;
     /* top: 27%; */
-
     top: 32%;
 }
 
 .parallax-content-white{
-/* position: absolute; */
-transform: translateY(-50%);
-/* width: 50%; */
-color: #EDE7E9;
-padding: 20px;
-margin-top: auto;
-margin-bottom: auto;
-/* height: 5vh;  this gives more space for the second parallax content*/
+    /* position: absolute; */
+    transform: translateY(-50%);
+    /* width: 50%; */
+    color: #EDE7E9;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* height: 5vh;  this gives more space for the second parallax content*/
 
-/* font-size: 18px; */
-
+    /* font-size: 18px; */
 }
 
 
@@ -309,8 +243,7 @@ margin-bottom: auto;
 
 
 .parallax-white {
-background-color: white;
-
+    background-color: white;
 }
 
 .parallax-white h2 {
@@ -322,40 +255,15 @@ background-color: white;
 }
 
 /* CUSTOM PARALLAX */
-
-
 .parallax-green.custom, .parallax-white.custom {
     display: flex;
     flex-direction: column-reverse;
 }
-/* .parallax-content-green.custom {
-    position: absolute;
-    top: 40%;
-} */
-/* .parallax-content-img:nth-child(odd) {
-    display: none;
-} */
-
-/* .parallax-top:first-child.custom .parallax-image, .parallax-white:first-child.custom .parallax-image  {
-    position: relative;
-    top: 27%;
-}  */
-
-
-
-
 
 .parallax-content-img.custom{
     display: flex;
     /* transform: translateY(-10%); */
 }
-
-
-/* .parallax-image {
-    position: relative;
-    top: 20%;
-}  */
-
 
 /* VIDEO BACKGROUND */
 
@@ -367,9 +275,6 @@ background-color: white;
     z-index: 2;
     padding-top: 20px;
 } 
-
-
-
 
 .bloc-video {
     position: relative;
@@ -384,6 +289,7 @@ background-color: white;
     object-fit: cover;
     opacity: 80%;
 }
+
 .video-logo {
     position: absolute;
     top: 50%;
@@ -419,8 +325,6 @@ background-color: white;
     margin-top: 80px;
     font-size: 62px;
 }
-
-
 
 .bloc-video .content-video .content-text, .content-button {
     display: flex;
@@ -470,27 +374,17 @@ background-color: white;
     position: relative;
     background: var(--platinum);
     /* height: 400px; */
-  }
+}
   
   /* Slides */
-  .my-slide {
+.my-slide {
     display: none;
     padding: 40px;
     text-align: center;
-  }
-
-  /* .my-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    text-align: center;
-    width: 100%;
-  } */
-  
-  /* Next & previous buttons */
-  .prev, .next {
+}
+ 
+/* Next & previous buttons */
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -502,31 +396,31 @@ background-color: white;
     font-size: 20px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
+}
   
-  /* Position the "next button" to the right */
-  .next {
+/* Position the "next button" to the right */
+.next {
     position: absolute;
     right: 0;
     border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
     background-color:var(--prussian-blue);
     color: white;
-  }
-  
-  /* The dot/bullet/indicator container */
-  .dot-container {
-      text-align: center;
-      padding: 20px;
-      /* background: #ddd; */
-      background-color: var(--hunyadi);
-  }
-  
-  /* The dots/bullets/indicators */
-  .dot {
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    /* background: #ddd; */
+    background-color: var(--hunyadi);
+}
+
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -536,31 +430,30 @@ background-color: white;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .slider .active, .dot:hover {
-    /* background-color: #717171; */
+}
+
+/* Add a background color to the active dot/circle */
+.slider .active, .dot:hover {
+/* background-color: #717171; */
     background-color: var(--dark-slate);
+}
 
-  }
-  
-  /* Add an italic font style to all quotes */
-  q {font-style: italic;}
-  
-  /* Add a blue color to the author */
-  .my-slide .author {color: var(--dark-slate);}
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.my-slide .author {color: var(--dark-slate);}
 
 
- /* ACCORDIONS */
+/* ACCORDIONS */
 
- .parallax-content-white.faq h1 {
+.parallax-content-white.faq h1 {
     display: flex;
     justify-content: center;
     padding-bottom: 1rem;
 }
 
- .accordion {
+.accordion {
     /* background-color: var(--prussian-blue); */
     background-color: var(--dark-slate);
     /* background-color: var(--hunyadi); */
@@ -575,63 +468,57 @@ background-color: white;
     transition: 0.4s;
     /* margin: 1%; */
     margin-bottom: 5px;
-  }
-  
-  .active, .accordion:hover {
+}
+
+.active, .accordion:hover {
     background-color: var(--hunyadi);
     color: var(--prussian-blue);
-  }
-  
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\002B';
     color: white;
     font-weight: bold;
     float: right;
     /* margin-left: 5px; */
-  }
-  
-  .accordion.active:after {
+}
+
+.accordion.active:after {
     content: "\2212";
     color: var(--prussian-blue);
-  }
-  
-  .panel {
+}
+
+.panel {
     padding: 0 18px;
     background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     margin: 8px;
-  }
+}
 
+/* CONTACT FORM */
 
-
-  /* CONTACT FORM */
-
-  .parallax-content-white ul{
-    /* width: 80%; */
+.parallax-content-white ul{
+/* width: 80%; */
     list-style-type: none;
-  }
+}
 
-  .parallax-content-white.custom.contact {
+.parallax-content-white.custom.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .parallax-form {
+.parallax-form {
     padding: 50px;
-  }
+}
 
-  .parallax-form label {
+.parallax-form label {
     color: white;
-  }
-  
-  /* .parallax-top.custom.contact{
-    width: 80%;
-  } */
+}
 
-  input[type=text], input[type=email], input[type=tel], textarea {
+input[type=text], input[type=email], input[type=tel], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -640,38 +527,38 @@ background-color: white;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: var(--hunyadi);
     color: var(--prussian-blue);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: var(--prussian-blue);
     color: white;
     transition: color 0.4s ease-in;
-  }
-  
-  .container {
+}
+
+.container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
-  }
+}
 
-  .map {
+.map {
     width: 100%;
-    /* height: 600px; */
-  }
-  
-  .map iframe {
+/* height: 600px; */
+}
+
+.map iframe {
     width: 100%;
     height: 100%;
-  }
+}
 
   /* FOOTER */
 
@@ -701,10 +588,9 @@ footer li {
     padding: 5px;
 }
 
-  /* footer ul {
-    padding-left: 150px;
-    padding-top: 100px;
-  } */
+footer ul {
+    font-size: 18px;
+}
 
 .bottom-nav li {
     padding: 5px;
@@ -736,11 +622,6 @@ footer li {
     padding-bottom: 20px;
 }
 
-/* footer a:visited {
-    color: var(--icterine);
-
-} */
-
 .socials {
     padding-top: 20px;
     display: flex;
@@ -752,8 +633,11 @@ footer li {
     color: white;
 }
 
+.socials .fa-brands:hover, .socials .fa-brands:focus {
+    color: var(--hunyadi);
+}
 
-  /* MEDIA QUERIES */
+/* MEDIA QUERIES */
 
 /* @media screen and (min-width: 820px)  */
 
@@ -764,11 +648,6 @@ footer li {
         width: 500px;
         transition: width 0.4s ease-in;
     }
-    
-    /* .menutoggle {
-        display: none;
-    } */
-
 
     /* PARALLAX */
 
@@ -785,9 +664,6 @@ footer li {
         display: flex;
         flex-direction: row;
     }
-    /* .parallax-green, .parallax-white { */
-        /* justify-content: start;  */ /*use in case to put the content on the left side of the screen */
-    /* } */
 
     .parallax-content-img {
         /* position: absolute; */
@@ -817,24 +693,24 @@ footer li {
 
     }
 
-
+    #middle-left {
+        flex-direction: row-reverse;
+    }
 
 
     /* SLIDER */
-.my-slide {
-    /* display: none; */
-    padding: 60px;
-    /* text-align: center; */
-  }
+    .my-slide {
+        /* display: none; */
+        padding: 60px;
+        /* text-align: center; */
+    }
 
  
 
-/* FOOTER */
-  footer {
-
-    flex-direction: row;
-
-}
+    /* FOOTER */
+    footer {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -884,8 +760,6 @@ footer li {
         align-items: center;
     }
 
- 
-    
     .sticky{
     background: var(--dark-slate);
     padding: 10px 100px;
@@ -896,56 +770,47 @@ footer li {
         color: white;
     }
 
-/* PARALLAX */
+    .sticky .navigation a:hover, .sticky .navigation a:focus {
+        color: var(--hunyadi);
+    }
+
+    /* SLIDER */
+    .my-slide {
+        /* display: none; */
+        padding: 70px;
+        /* text-align: center; */
+    }
 
 
+    /* BACKGROUND VIDEO */
+    .video-logo {
+        width: 800px;
+        transition: width 0.4s ease-in;
 
+    }
 
-      /* FOOTER */
-/* 
-footer {
+    .bloc-video .content-video .content-button button{
+        width: 200px;
+        height: 60px;
+        transition: width  0.4s ease-in, height 0.4s ease-in;
 
-    flex-direction: row;
+    }
 
-} */
+    /* ACCORDIONS */
 
-/* SLIDER */
-.my-slide {
-    /* display: none; */
-    padding: 70px;
-    /* text-align: center; */
-  }
+    .parallax-accordions {
+        display: flex;
+        justify-content:center;
+        /* width: 100%; */
+        /* flex-direction: column; */
+        /* flex-direction: row; */
+        /* flex-basis: 50%; */
+        align-items: center;
+    }
 
+    .parallax-column {
+        margin: 10px;
 
-  /* BACKGROUND VIDEO */
-  .video-logo {
-    width: 800px;
-    transition: width 0.4s ease-in;
-
-}
-
-.bloc-video .content-video .content-button button{
-    width: 200px;
-    height: 60px;
-    transition: width  0.4s ease-in, height 0.4s ease-in;
-
-}
-
-/* ACCORDIONS */
-
-.parallax-accordions {
-    display: flex;
-    justify-content:center;
-    /* width: 100%; */
-    /* flex-direction: column; */
-    /* flex-direction: row; */
-    /* flex-basis: 50%; */
-    align-items: center;
-}
-
-.parallax-column {
-    margin: 10px;
-
-}
+    }
 }
 
