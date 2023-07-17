@@ -213,13 +213,20 @@ margin-bottom: auto;
     display: flex;
     justify-content: center;
 }
+
+/* aggiustare qui ************************************** */
   
-.parallax-image img {
+/* .parallax-image img {
     max-width: 90%; 
     height: auto;
     position: relative;
-    /* top: 27%; */
+    top: 27%; //remove
     top: 32%;
+} */
+
+.parallax-image img {
+    /* padding-top: 20%; */
+    max-width: 90%;
 }
 
 .parallax-content-white{
@@ -228,12 +235,14 @@ margin-bottom: auto;
     /* width: 50%; */
     color: #EDE7E9;
     padding: 20px;
-    margin-top: auto;
+    margin-top: auto; /* or use margin-top:10% in the media query */
     margin-bottom: auto;
     /* height: 5vh;  this gives more space for the second parallax content*/
 
     /* font-size: 18px; */
 }
+
+/* a qui******************************** */
 
 
 .parallax-green h1,h2 {
