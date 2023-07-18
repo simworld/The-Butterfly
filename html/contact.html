@@ -1,155 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Contact The Butterfly - Crèche & Childcare to inquire about our childcare services, schedule a visit, or discuss enrolment options. We look forward to hearing from you and providing the information you need.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" >
+    <meta
+      name="description"
+      content="Contact The Butterfly - Crèche & Childcare to inquire about our childcare services, schedule a visit, or discuss enrolment options. We look forward to hearing from you and providing the information you need."
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="../assets/css/style.css" >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
 
-    
-    <title>Contact The Butterfly - Crèche & Childcare - Get in Touch for Enquiries and Enrolment</title>  
-</head>
-<body>
-
-<!-- OPENING HEADER -->
-<header>
-    <nav>
+    <title>
+      Contact The Butterfly - Crèche & Childcare - Get in Touch for Enquiries
+      and Enrolment
+    </title>
+  </head>
+  <body>
+    <!-- OPENING HEADER -->
+    <header>
+      <nav>
         <a href="#">
-            <img src="../assets/images/logo-no-img.png" alt="Logo">
+          <img
+            src="../assets/images/logo-no-img.png"
+            alt="The Butterfly Logo with no Image"
+          >
         </a>
         <div class="menutoggle" onclick="toggleMenu();">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-x"></i>
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
         </div>
 
         <ul class="navigation">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/our-approach.html">Our Approach</a></li>
-            <li><a href="../html/staff.html">Staff</a></li>
-            <li><a href="../html/rooms.html">Rooms</a></li>
-            <li><a href="../html/faq.html">FAQ</a></li>
-            <li><a href="../html/contact.html">Contact Us</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/our-approach.html">Our Approach</a></li>
+          <li><a href="../html/staff.html">Staff</a></li>
+          <li><a href="../html/rooms.html">Rooms</a></li>
+          <li><a href="../html/faq.html">FAQ</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
         </ul>
-    </nav>
-</header>
-<!-- CLOSING HEADER -->
+      </nav>
+    </header>
+    <!-- CLOSING HEADER -->
 
-<!-- VIDEO BACKGROUND -->
-<div class="bloc-video">
-    <video autoplay loop muted playsinline id="video">
-        <source src="../assets/videos/pupils-low.mp4" type="video/mp4">
-    </video>
-    <div class="content-video">
+    <!-- VIDEO BACKGROUND -->
+    <div class="bloc-video">
+      <video autoplay loop muted playsinline id="video">
+        <source src="../assets/videos/pupils-low.mp4" type="video/mp4" >
+      </video>
+      <div class="content-video">
         <div class="content-text">
-            <img src="../assets/images/logo.webp" alt="The Butterfly Logo" class="video-logo">
+          <img
+            src="../assets/images/logo.webp"
+            alt="The Butterfly Logo"
+            class="video-logo"
+          >
         </div>
 
         <div class="video-button">
-            <i class="fa-solid fa-pause" id="playPauseButton" onclick="togglePlayPause()"></i>
+          <i
+            class="fa-solid fa-pause"
+            id="playPauseButton"
+            onclick="togglePlayPause()"
+          ></i>
         </div>
 
         <div class="content-button">
-            <a href="../html/contact.html#contact-form">
-                <button type="button" class="btn">Contact Us</button>
-            </a>
+          <button
+            type="button"
+            class="btn"
+            onclick="location.href='../html/contact.html#contact-form'"
+          >
+            Contact Us
+          </button>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- PARALLAX -->
-<div class="parallax-container" id="contact-form">
-    <div class="parallax-white custom">
+    <!-- PARALLAX -->
+    <div class="parallax-container" id="contact-form">
+      <div class="parallax-white custom">
         <div class="parallax-content-white custom contact">
-            <h1>Contact Us</h1>
-            <p>Are you currently considering childcare for your child or children? We would be more than happy to provide you with additional details about The Butterfly - Crèche & Childcare and to discuss the specific needs of your child or children. Please complete the form, and we will organize a call or a visit at a time that is most convenient for you.</p>
-        
-            <ul>
+          <h1>Contact Us</h1>
+          <p>
+            Are you currently considering childcare for your child or children?
+            We would be more than happy to provide you with additional details
+            about The Butterfly - Crèche & Childcare and to discuss the specific
+            needs of your child or children. Please complete the form, and we
+            will organize a call or a visit at a time that is most convenient
+            for you.
+          </p>
 
-                <li>The Butterfly - Crèche & Childcare</li>
-                <li>Poppintree Industrial Estate</li>
-                <li>Jamestown Road, Finglas, Dublin 11</li>
-                <li>Tel: <a href="tel:018140200">018140200</a></li>
-                <li>Email: <a href="mailto:info@thebutterfly.ie ">info@thebutterfly.ie </a></li>
-    
-            </ul>
-        </div>
-    </div>
-
-    <div class="parallax-green">
-        <div class="parallax-form">
-            <form action=" ">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="firstname" placeholder="Your name..">
-            
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email..">
-                
-                <label for="email2">Email Confirmation</label>
-                <input type="email" id="email2" name="email2" placeholder="Confirm your email..">
-
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your Phone..">
-            
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" placeholder="Please write your message.." style="height:200px"></textarea>
-            
-                <input type="submit" value="Send">
-              </form>
-        </div>
-    </div>
-    <div class="parallax-white">
-        <div class="map">
-            <iframe scrolling="no" marginheight="0" marginwidth="0" 
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Finglas%20Training%20Centre%20CDETB+(Finglas%20Training%20Centre%20CDETB)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0">
-            <a href="https://www.maps.ie/distance-area-calculator.html">distance maps</a>
-            </iframe>
-        </div>
-    </div>
-</div>
-
-<!-- FOOTER -->      
-<footer>
-
-    <img src="../assets/images/logo.webp" alt="Logo">
-
-    <div class="bottom-nav">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/our-approach.html">Our Approach</a></li>
-            <li><a href="../html/staff.html">Staff</a></li>
-            <li><a href="../html/rooms.html">Rooms</a></li>
-            <li><a href="../html/faq.html">FAQ</a></li>
-            <li><a href="../html/contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-
-
-    <div class="contact">
-    
-        <ul>
-
+          <ul>
             <li>The Butterfly - Crèche & Childcare</li>
             <li>Poppintree Industrial Estate</li>
             <li>Jamestown Road, Finglas, Dublin 11</li>
             <li>Tel: <a href="tel:018140200">018140200</a></li>
-            <li>Email: <a href="mailto:info@thebutterfly.ie ">info@thebutterfly.ie </a></li>
+            <li>
+              Email:
+              <a href="mailto:info@thebutterfly.ie ">info@thebutterfly.ie </a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
+      <div class="parallax-green">
+        <div class="parallax-form">
+          <form action=" ">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="firstname"
+              placeholder="Your name.."
+            >
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            >
+
+            <label for="email2">Email Confirmation</label>
+            <input
+              type="email"
+              id="email2"
+              name="email2"
+              placeholder="Confirm your email.."
+            >
+
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Your Phone.."
+            >
+
+            <label for="message">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Please write your message.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Send" >
+          </form>
+        </div>
+      </div>
+      <div class="parallax-white">
+        <div class="map">
+          <iframe
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Finglas%20Training%20Centre%20CDETB+(Finglas%20Training%20Centre%20CDETB)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+          >
+            <a href="https://www.maps.ie/distance-area-calculator.html"
+              >distance maps</a
+            >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <img
+        src="../assets/images/logo.webp"
+        alt="The Butterfly Logo for Footer"
+      >
+      <div class="bottom-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/our-approach.html">Our Approach</a></li>
+          <li><a href="../html/staff.html">Staff</a></li>
+          <li><a href="../html/rooms.html">Rooms</a></li>
+          <li><a href="../html/faq.html">FAQ</a></li>
+          <li><a href="../html/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <ul>
+          <li>The Butterfly - Crèche & Childcare</li>
+          <li>Poppintree Industrial Estate</li>
+          <li>Jamestown Road, Finglas, Dublin 11</li>
+          <li>Tel: <a href="tel:018140200">018140200</a></li>
+          <li>
+            Email:
+            <a href="mailto:info@thebutterfly.ie ">info@thebutterfly.ie </a>
+          </li>
         </ul>
 
         <div class="socials">
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f fa-3x"></i></a>
-            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter fa-3x"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in fa-3x"></i> </a>           
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f fa-3x"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fa-brands fa-twitter fa-3x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            aria-label="Linkedin"
+            ><i class="fa-brands fa-linkedin-in fa-3x"></i>
+          </a>
         </div>
+      </div>
+    </footer>
 
-    </div>
-</footer>
-
-<script src="../assets/js/nav.js"></script>
-<script src="../assets/js/video-controls.js"></script>
-<script src="../assets/js/parallax.js"></script>  
-
-</body>
-
+    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/video-controls.js"></script>
+    <script src="../assets/js/parallax.js"></script>
+  </body>
 </html>
