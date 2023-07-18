@@ -216,13 +216,13 @@ margin-bottom: auto;
 
 /* aggiustare qui ************************************** */
   
-/* .parallax-image img {
+.parallax-image img {
     max-width: 90%; 
     height: auto;
     position: relative;
-    top: 27%; //remove
+    /* top: 27%;  */ /* remove */
     top: 32%;
-} */
+}
 
 .parallax-image img {
     /* padding-top: 20%; */
@@ -647,10 +647,16 @@ footer ul {
 }
 
 /* MEDIA QUERIES */
+/* @media screen and (min-width: 680px) {
+    .parallax-green.custom, .parallax-white.custom {
+        display: flex;
+        flex-direction: row;
+    }
 
-/* @media screen and (min-width: 820px)  */
+} */
+/* @media screen and (min-width: 820px or 720px)  */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 680px) {
 
     .video-logo {
         
