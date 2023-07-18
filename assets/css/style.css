@@ -508,7 +508,7 @@ q {font-style: italic;}
 
 /* CONTACT FORM */
 
-.parallax-content-white ul{
+.parallax-content-white.custom.contact ul{
 /* width: 80%; */
     list-style-type: none;
 }
