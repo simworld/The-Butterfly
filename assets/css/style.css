@@ -47,10 +47,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 40px 100px; */
     z-index: 1;
-    /* display: flex; */
-    /* justify-content: space-between; */
     align-items: center;
     transition: .5s;
 }
@@ -521,6 +518,8 @@ q {font-style: italic;}
 
 .parallax-form {
     padding: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .parallax-form label {
