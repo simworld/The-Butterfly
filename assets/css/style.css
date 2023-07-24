@@ -589,9 +589,6 @@ footer li {
   padding: 5px;
 }
 
-footer ul {
-  font-size: 18px;
-}
 
 .bottom-nav li {
   padding: 5px;
@@ -678,14 +675,8 @@ a:focus {
     margin: 3px;
   }
 
-  footer{
-    flex-direction: row;
-  }
 
 
-  /* Add this CSS to your existing styles */
-
-/* Adjust the padding as needed to create some space around the form */
 .parallax-form {
   padding: 40px 20px;
 }
@@ -697,6 +688,13 @@ a:focus {
   max-height: calc(100vh - 100px); 
 }
 
+footer{
+  flex-direction: row;
+}
+
+footer ul {
+  font-size: 16px;
+}
 
 
 }
@@ -803,7 +801,8 @@ a:focus {
   }
 
   header {
-    padding: 40px 100px;
+    /* padding: 40px 100px; */
+    padding: 40px;
   }
 
   .menutoggle {
@@ -878,5 +877,16 @@ a:focus {
 
   .parallax-column {
     margin: 10px;
+  }
+
+  /* FORM */
+
+  .form-wrapper {
+    max-width: 800px;
+  }
+
+  /* FOOTER */
+  footer ul {
+    font-size: 18px;
   }
 }
