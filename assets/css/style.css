@@ -408,6 +408,7 @@ button.video-button {
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  /* opacity: 20%; */
 }
 
 .next {
@@ -706,7 +707,7 @@ footer ul {
 /* Add this media query at the end of the CSS file */
 
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 667px) {
 
 /* @media screen and (min-width: 680px) { */
   .video-logo {
@@ -721,6 +722,7 @@ footer ul {
     /* width: 50%; */
     /* to have more space in the sides*/
     width: 95%;
+    
   }
 
   .parallax-content-white.faq {
