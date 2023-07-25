@@ -289,7 +289,7 @@ h2 {
 
 /* VIDEO BACKGROUND */
 
-.bloc-video nav {
+.video-container nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -298,14 +298,14 @@ h2 {
   padding-top: 20px;
 }
 
-.bloc-video {
+.video-container {
   position: relative;
   /* min-height: 60vh; */
   /* height: 80vh; reduce the height of the video to be not full screen*/
   height: 100vh;
 }
 
-.bloc-video video {
+.video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -344,7 +344,7 @@ button.video-button {
   z-index: 0;
 }
 
-.bloc-video .content-video {
+.video-container .content-video {
   /* flex-direction: column; */
   /* color: #0E2936; */
   color: var(--prussian-blue);
@@ -352,17 +352,17 @@ button.video-button {
   /* font-size: 62px; */
 }
 
-.bloc-video .content-video .content-text,
+.video-container .content-video .content-text,
 .content-button {
   display: flex;
   justify-content: center;
 }
 
-.bloc-video .content-video .content-button {
+.video-container .content-video .content-button {
   margin-top: 50px;
 }
 
-.bloc-video .content-video .content-button button {
+.video-container .content-video .content-button button {
   cursor: pointer;
   padding: 10px;
   width: 150px;
@@ -376,7 +376,7 @@ button.video-button {
   transition: width 0.4s ease-in, height 0.4s ease-in;
 }
 
-.bloc-video .content-video .content-button button:hover {
+.video-container .content-video .content-button button:hover {
   transition: all 0.75s ease-in-out;
   background: var(--platinum);
   border: 2px solid var(--prussian-blue);
@@ -891,7 +891,7 @@ footer ul {
     transition: width 0.4s ease-in;
   }
 
-  .bloc-video .content-video .content-button button {
+  .video-container .content-video .content-button button {
     width: 200px;
     height: 60px;
     transition: width 0.4s ease-in, height 0.4s ease-in;

@@ -2,7 +2,12 @@ document.addEventListener("DOMContentLoaded", function() {
   let parallaxContainers = document.querySelectorAll(".parallax-container");
   let requestID;
 
+  // console.log("Window Width:", windowWidth);
+
+
   function parallaxScroll() {
+  const windowWidth = window.innerWidth;
+    
     for (let i = 0; i < parallaxContainers.length; i++) {
       let container = parallaxContainers[i];
       let parallaxGreen = container.querySelectorAll(".parallax-green");
@@ -20,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
           parallaxContentTop.style.transform = "translateY(" + translateYTop + "px)";
         }
 
-        if (parallaxContentImg) {
+        if (parallaxContentImg && windowWidth < 480) {
+          parallaxContentImg.style.transform = "translateZ(" + translateYTop + "px)";
+        } else if (parallaxContentImg) {
           parallaxContentImg.style.transform = "translateY(" + translateYTop + "px)";
         }
       }
@@ -49,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
   parallaxScroll();
 
   // Stop the parallax effect when the page is not visible (e.g., in background tab)
+  // performance optimi
   document.addEventListener("visibilitychange", function() {
     if (document.visibilityState === "hidden") {
       cancelAnimationFrame(requestID);
