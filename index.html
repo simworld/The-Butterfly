@@ -53,10 +53,12 @@
 
     <!-- VIDEO BACKGROUND -->
     <div class="bloc-video">
+
       <video autoplay loop muted playsinline id="video">
         <source src="assets/videos/pupils-low.mp4" type="video/mp4" >
       </video>
       <div class="content-video">
+
         <div class="content-text">
           <img
             src="assets/images/logo.webp"
@@ -65,15 +67,10 @@
           >
         </div>
 
-        <button class="video-button">
-          <i
-            class="fa-solid fa-pause fa-3x"
-            id="playPauseButton"
-            onclick="togglePlayPause()"
-            tabindex="0"
-          ></i>
-        </button>
-
+        <div class="video-button" onclick="togglePlayPause()" role="button" tabindex="0" aria-label="Play/Pause">
+          <i class="fa-solid fa-pause fa-3x" id="playPauseButton"></i>
+        </div>
+        
         <div class="content-button">
             <button type="button" class="btn" onclick="location.href='html/contact.html#contact-form'">Contact Us</button>
         </div>

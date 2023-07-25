@@ -338,7 +338,7 @@ button.video-button {
   /* color: #0E2936; */
   color: var(--prussian-blue);
   margin-top: 80px;
-  font-size: 62px;
+  /* font-size: 62px; */
 }
 
 .bloc-video .content-video .content-text,

@@ -22,17 +22,17 @@
     <!-- OPENING HEADER -->
     <header>
       <nav>
-        <a href="../index.html">
+        <a href="index.html">
           <img
             src="../assets/images/logo-no-img.png"
             alt="The Butterfly Logo with no Image"
-          />
+          >
         </a>
-        <div class="menutoggle" onclick="toggleMenu();">
+        <!-- <div class="menutoggle" onclick="toggleMenu();"> -->
+        <button class="menutoggle" onclick="toggleMenu();" role="button" tabindex="0" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-x"></i>
-        </div>
-
+        </button>
         <ul class="navigation">
           <li tabindex="0"><a href="../index.html">Home</a></li>
           <li tabindex="0">
@@ -49,34 +49,26 @@
 
     <!-- VIDEO BACKGROUND -->
     <div class="bloc-video">
+
       <video autoplay loop muted playsinline id="video">
-        <source src="../assets/videos/playdoh.mp4" type="video/mp4" />
+        <source src="../assets/videos/pupils-low.mp4" type="video/mp4" >
       </video>
       <div class="content-video">
+
         <div class="content-text">
           <img
             src="../assets/images/logo.webp"
             alt="The Butterfly Logo"
             class="video-logo"
-          />
-        </div>
-
-        <div class="video-button">
-          <i
-            class="fa-solid fa-pause"
-            id="playPauseButton"
-            onclick="togglePlayPause()"
-          ></i>
-        </div>
-
-        <div class="content-button">
-          <button
-            type="button"
-            class="btn"
-            onclick="location.href='../html/contact.html#contact-form'"
           >
-            Contact Us
-          </button>
+        </div>
+
+        <div class="video-button" onclick="togglePlayPause()" role="button" tabindex="0" aria-label="Play/Pause">
+          <i class="fa-solid fa-pause fa-3x" id="playPauseButton"></i>
+        </div>
+        
+        <div class="content-button">
+            <button type="button" class="btn" onclick="location.href='../html/contact.html#contact-form'">Contact Us</button>
         </div>
       </div>
     </div>
