@@ -105,12 +105,16 @@ nav li {
 }
 
 /* HAMBURGER MENU STYLING */
+button.menutoggle {
+  background: none;
+  border: none;
+}
 .menutoggle {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 24px;
-  height: 20px;
+  /* width: 24px; */
+  /* height: 20px; */
   cursor: pointer;
   padding: 20px;
 }
@@ -316,12 +320,16 @@ h2 {
   z-index: 0;
 }
 
+button.video-button {
+  background: none;
+  border: none;
+}
 .video-button {
   position: absolute;
-  top: 85%;
+  top: 84%;
   left: 5%;
   /* transform: translate(-50%, -50%); */
-  width: 800px;
+  /* width: 800px; */
   z-index: 0;
 }
 
@@ -653,9 +661,6 @@ a:focus {
 
 @media (orientation: landscape) {
   
-  /* h1{
-    font-size: 20px;
-  } */
 
   .parallax-accordions {
     display: flex;
@@ -701,7 +706,7 @@ footer ul {
 /* Add this media query at the end of the CSS file */
 
 
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 812px) {
 
 /* @media screen and (min-width: 680px) { */
   .video-logo {
@@ -842,6 +847,15 @@ footer ul {
   .sticky .navigation a:hover,
   .sticky .navigation a:focus {
     color: var(--hunyadi);
+  }
+
+  /* PARALLAX */
+
+  .parallax-content-green,
+  .parallax-content-white {
+    width: 50%;
+    /* to have more space in the sides*/
+    /* width: 95%; */
   }
 
   /* SLIDER */

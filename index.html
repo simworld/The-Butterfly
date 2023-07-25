@@ -32,10 +32,11 @@
             alt="The Butterfly Logo with no Image"
           >
         </a>
-        <div class="menutoggle" onclick="toggleMenu();">
+        <!-- <div class="menutoggle" onclick="toggleMenu();"> -->
+        <button class="menutoggle" onclick="toggleMenu();" role="button" tabindex="0" aria-label="Toggle Menu">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-x"></i>
-        </div>
+        </button>
         <ul class="navigation">
           <li tabindex="0"><a href="index.html">Home</a></li>
           <li tabindex="0">
@@ -64,14 +65,14 @@
           >
         </div>
 
-        <div class="video-button">
+        <button class="video-button">
           <i
-            class="fa-solid fa-pause"
+            class="fa-solid fa-pause fa-3x"
             id="playPauseButton"
             onclick="togglePlayPause()"
             tabindex="0"
           ></i>
-        </div>
+        </button>
 
         <div class="content-button">
             <button type="button" class="btn" onclick="location.href='html/contact.html#contact-form'">Contact Us</button>
@@ -81,7 +82,7 @@
 
     <!-- PARALLAX -->
     <div class="parallax-container">
-      <div class="parallax-green">
+      <section class="parallax-green">
         <div class="parallax-content-green">
           <h1>Welcome to The Butterfly – Crèche & Childcare.</h1>
           <p>
@@ -110,9 +111,9 @@
             >
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="parallax-white">
+      <section class="parallax-white">
         <div class="parallax-content-white">
           <h2>Age Groups at The Butterfly - Creche & Childcare:</h2>
           <ul>
@@ -141,7 +142,7 @@
             >
           </div>
         </div>
-      </div>
+      </section>
 
       <div class="parallax-green slider">
         <!-- SLIDER -->
