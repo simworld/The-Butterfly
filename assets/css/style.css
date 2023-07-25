@@ -227,7 +227,7 @@ button.menutoggle {
 /* aggiustare qui ************************************** */
 
 .parallax-image img {
-  max-width: 90%;
+  max-width: 95%;
   height: auto;
   position: relative;
   /* top: 27%;  */ /* remove */
@@ -511,6 +511,11 @@ q {
   transition: max-height 0.2s ease-out;
   /* margin: 8px; */
   margin: 3px;
+}
+
+.faq p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* CONTACT FORM */
@@ -912,7 +917,6 @@ footer ul {
   .parallax-column {
     margin: 10px;
   }
-
   /* FORM */
 
   .form-wrapper {
@@ -932,6 +936,7 @@ footer ul {
       width: 30%;
       /* to have more space in the sides*/
       /* width: 95%; */
+
     }
     
     .copyright{
