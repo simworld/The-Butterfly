@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta
       name="description"
       content="Contact The Butterfly - Crèche & Childcare to inquire about our childcare services, schedule a visit, or discuss enrolment options. We look forward to hearing from you and providing the information you need."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="../assets/css/style.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    >
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    >
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    >
 
     <title>
       Contact The Butterfly - Crèche & Childcare - Get in Touch for Enquiries
@@ -22,26 +45,45 @@
     <!-- OPENING HEADER -->
     <header>
       <nav>
-        <a href="index.html">
+        <a href="../index.html" aria-label="Home">
           <img
-            src="../assets/images/logo-no-img.png"
+            src="../assets/images/logo-no-img.webp"
             alt="The Butterfly Logo with no Image"
           >
         </a>
         <!-- <div class="menutoggle" onclick="toggleMenu();"> -->
-        <button class="menutoggle" onclick="toggleMenu();" role="button" tabindex="0" aria-label="Toggle Menu">
+        <button
+          class="menutoggle"
+          onclick="toggleMenu();"
+          tabindex="0"
+          aria-label="Toggle Menu"
+        >
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-x"></i>
         </button>
         <ul class="navigation">
-          <li tabindex="0"><a href="../index.html">Home</a></li>
           <li tabindex="0">
-            <a href="../html/our-approach.html">Our Approach</a>
+            <a href="../index.html" aria-label="Home">Home</a>
           </li>
-          <li tabindex="0"><a href="../html/staff.html">Staff</a></li>
-          <li tabindex="0"><a href="../html/rooms.html">Rooms</a></li>
-          <li tabindex="0"><a href="../html/faq.html">FAQ</a></li>
-          <li tabindex="0"><a href="../html/contact.html">Contact Us</a></li>
+          <li tabindex="0">
+            <a href="../html/our-approach.html" aria-label="Our Approach"
+              >Our Approach</a
+            >
+          </li>
+          <li tabindex="0">
+            <a href="../html/staff.html" aria-label="Staff">Staff</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/rooms.html" aria-label="Rooms">Rooms</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/faq.html" aria-label="FAQ">FAQ</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/contact.html" aria-label="Contact Us"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -49,12 +91,10 @@
 
     <!-- VIDEO BACKGROUND -->
     <div class="video-container">
-
       <video autoplay loop muted playsinline id="video">
         <source src="../assets/videos/pupils-low.mp4" type="video/mp4" >
       </video>
       <div class="content-video">
-
         <div class="content-text">
           <img
             src="../assets/images/logo.webp"
@@ -63,12 +103,25 @@
           >
         </div>
 
-        <div class="video-button" onclick="togglePlayPause()" role="button" tabindex="0" aria-label="Play/Pause">
+        <div
+          class="video-button"
+          onclick="togglePlayPause()"
+          role="button"
+          tabindex="0"
+          aria-label="Play/Pause"
+        >
           <i class="fa-solid fa-pause fa-3x" id="playPauseButton"></i>
         </div>
-        
+
         <div class="content-button">
-            <button type="button" class="btn" onclick="location.href='../html/contact.html#contact-form'">Contact Us</button>
+          <button
+            type="button"
+            class="btn"
+            onclick="location.href='../html/contact.html#contact-form'"
+            aria-label="Contact Us"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </div>
@@ -99,17 +152,22 @@
         </div>
       </section>
 
-      <section class="parallax-green">
+      <section class="parallax-green form">
+        <h2>Send us a message!</h2>
         <div class="parallax-form">
           <div class="form-wrapper">
-            <form action=" ">
+            <form
+              action="../form-handler.php"
+              method="POST"
+              aria-label="Contact form"
+            >
               <label for="name">Name</label>
               <input
                 type="text"
                 id="name"
                 name="firstname"
                 placeholder="Your name.."
-              />
+              >
 
               <label for="email">Email</label>
               <input
@@ -117,15 +175,15 @@
                 id="email"
                 name="email"
                 placeholder="Your email.."
-              />
+              >
 
-              <label for="email2">Email Confirmation</label>
+              <!-- <label for="email2">Email Confirmation</label>
               <input
                 type="email"
                 id="email2"
                 name="email2"
                 placeholder="Confirm your email.."
-              />
+              > -->
 
               <label for="phone">Phone</label>
               <input
@@ -133,7 +191,7 @@
                 id="phone"
                 name="phone"
                 placeholder="Your Phone.."
-              />
+              >
 
               <label for="message">Your Message</label>
               <textarea
@@ -143,26 +201,27 @@
                 style="height: 200px"
               ></textarea>
 
-              <input type="submit" value="Send" />
+              <button
+                class="submit-btn"
+                type="submit"
+                aria-label="Send a Message"
+              >
+                Send
+              </button>
             </form>
           </div>
         </div>
       </section>
-      <section class="parallax-white">
+
+      <div class="parallax-white">
         <div class="map">
           <iframe
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Finglas%20Training%20Centre%20CDETB+(Finglas%20Training%20Centre%20CDETB)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-            frameborder="0"
-          >
-            <a href="https://www.maps.ie/distance-area-calculator.html"
-              >distance maps</a
-            >
-          </iframe>
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Finglas%20Training%20Centre%20CDETB+(Finglas%20Training%20Centre%20CDETB)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          name="google-map"
+          aria-label="Google Map showing The Butterfly - Crèche & Childcare location"
+        ></iframe>
         </div>
-      </section>
+      </div>
     </div>
 
     <!-- FOOTER -->
@@ -170,7 +229,7 @@
       <img
         src="../assets/images/logo.webp"
         alt="The Butterfly Logo for Footer"
-      />
+      >
       <div class="bottom-nav">
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -215,7 +274,9 @@
     </footer>
 
     <div class="copyright">
-      <p>&copy; The Butterfly - Crèche and Childcare - 2023. All rights reserved.</p>
+      <p>
+        &copy; The Butterfly - Crèche and Childcare - 2023. All rights reserved.
+      </p>
       <p>Web Design and Developed by Simone Susino</p>
     </div>
 

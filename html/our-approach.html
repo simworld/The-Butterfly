@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" >
     <meta
       name="description"
       content="Learn about our unique approach to childcare and early education at The Butterfly - Crèche & Childcare. We prioritize the well-being, development, and individual needs of each child in our care."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="../assets/css/style.css" >
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    >
+
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    >
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    >
+    <link
+      rel="icon"
+      href="../assets/images/favicon/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    >
 
     <title>
       Our Approach to Childcare at The Butterfly - Crèche & Childcare
@@ -21,26 +43,45 @@
     <!-- OPENING HEADER -->
     <header>
       <nav>
-        <a href="index.html">
+        <a href="../index.html">
           <img
-            src="../assets/images/logo-no-img.png"
+            src="../assets/images/logo-no-img.webp"
             alt="The Butterfly Logo with no Image"
           >
         </a>
         <!-- <div class="menutoggle" onclick="toggleMenu();"> -->
-        <button class="menutoggle" onclick="toggleMenu();" role="button" tabindex="0" aria-label="Toggle Menu">
+        <button
+          class="menutoggle"
+          onclick="toggleMenu();"
+          tabindex="0"
+          aria-label="Toggle Menu"
+        >
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-x"></i>
         </button>
         <ul class="navigation">
-          <li tabindex="0"><a href="../index.html">Home</a></li>
           <li tabindex="0">
-            <a href="../html/our-approach.html">Our Approach</a>
+            <a href="../index.html" aria-label="Home">Home</a>
           </li>
-          <li tabindex="0"><a href="../html/staff.html">Staff</a></li>
-          <li tabindex="0"><a href="../html/rooms.html">Rooms</a></li>
-          <li tabindex="0"><a href="../html/faq.html">FAQ</a></li>
-          <li tabindex="0"><a href="../html/contact.html">Contact Us</a></li>
+          <li tabindex="0">
+            <a href="../html/our-approach.html" aria-label="Our Approach"
+              >Our Approach</a
+            >
+          </li>
+          <li tabindex="0">
+            <a href="../html/staff.html" aria-label="Staff">Staff</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/rooms.html" aria-label="Rooms">Rooms</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/faq.html" aria-label="FAQ">FAQ</a>
+          </li>
+          <li tabindex="0">
+            <a href="../html/contact.html" aria-label="Contact Us"
+              >Contact Us</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,12 +89,10 @@
 
     <!-- VIDEO BACKGROUND -->
     <div class="video-container">
-
       <video autoplay loop muted playsinline id="video">
         <source src="../assets/videos/pupils-low.mp4" type="video/mp4" >
       </video>
       <div class="content-video">
-
         <div class="content-text">
           <img
             src="../assets/images/logo.webp"
@@ -62,12 +101,25 @@
           >
         </div>
 
-        <div class="video-button" onclick="togglePlayPause()" role="button" tabindex="0" aria-label="Play/Pause">
+        <div
+          class="video-button"
+          onclick="togglePlayPause()"
+          role="button"
+          tabindex="0"
+          aria-label="Play/Pause"
+        >
           <i class="fa-solid fa-pause fa-3x" id="playPauseButton"></i>
         </div>
-        
+
         <div class="content-button">
-            <button type="button" class="btn" onclick="location.href='../html/contact.html#contact-form'">Contact Us</button>
+          <button
+            type="button"
+            class="btn"
+            onclick="location.href='../html/contact.html#contact-form'"
+            aria-label="Contact Us"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </div>
@@ -97,7 +149,7 @@
                 ../assets/images/our-approach/desk-and-books-mobile.webp  300w
               "
               sizes="(min-width: 900px) 900px, (min-width: 600px) 600px, 300px"
-            />
+            >
           </div>
         </div>
       </section>
@@ -137,7 +189,7 @@
                 ../assets/images/our-approach/wood-pencils-mobile.webp  300w
               "
               sizes="(min-width: 900px) 900px, (min-width: 600px) 600px, 300px"
-            />
+            >
           </div>
         </div>
       </section>
@@ -161,7 +213,7 @@
       <img
         src="../assets/images/logo.webp"
         alt="The Butterfly Logo for Footer"
-      />
+      >
       <div class="bottom-nav">
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -206,12 +258,13 @@
     </footer>
 
     <div class="copyright">
-      <p>&copy; The Butterfly - Crèche and Childcare - 2023. All rights reserved.</p>
+      <p>
+        &copy; The Butterfly - Crèche and Childcare - 2023. All rights reserved.
+      </p>
       <p>Web Design and Developed by Simone Susino</p>
     </div>
 
     <script src="../assets/js/nav.js"></script>
-    <!-- <script src="../assets/js/slider.js"></script> -->
     <script src="../assets/js/video-controls.js"></script>
     <script src="../assets/js/parallax.js"></script>
   </body>
