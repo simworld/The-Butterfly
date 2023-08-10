@@ -1,4 +1,7 @@
 <?php
+
+require_once 'config.php';
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Sanitize and retrieve form data
     $name = htmlspecialchars($_POST["firstname"]);
@@ -15,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
 
     // Compose the email message
-    $to = "simworld44@gmail.com"; 
+    $to = RECIPIENT_EMAIL;
     $subject = "Contact Form Submission - The Butterfly - Crèche & Childcare";
     $messageBody = "Hello,\n\n";
     $messageBody .= "You have received a new contact form submission from:\n\n";

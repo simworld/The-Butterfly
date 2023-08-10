@@ -1,3 +1,5 @@
+'use strict'
+
 let video = document.getElementById("video");
 let playPauseButton = document.getElementById("playPauseButton");
 

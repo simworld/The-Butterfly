@@ -105,6 +105,11 @@ nav li {
   color: var(--platinum);
 }
 
+.navigation .current {
+  /* color: var(--platinum); */
+  border-bottom: 2px solid var(--prussian-blue);
+}
+
 /* HAMBURGER MENU STYLING */
 button.menutoggle {
   background: none;
@@ -202,8 +207,23 @@ button.menutoggle {
 .parallax-content-green {
   color: #ede7e9;
   padding: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+}
+
+.parallax-content-white {
+  color: #ede7e9;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: auto;
+  margin-bottom: auto; */
 }
 
 .parallax-content-img {
@@ -213,6 +233,7 @@ button.menutoggle {
 .parallax-image {
   display: flex;
   justify-content: center;
+  align-items: center; /******************************/
 }
 
 .parallax-image img {
@@ -223,14 +244,8 @@ button.menutoggle {
   border-radius: 2%;
 }
 
-.parallax-content-white {
-  color: #ede7e9;
-  padding: 20px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.parallax-green h1, h2 {
+.parallax-green h1,
+h2 {
   color: var(--hunyadi);
 }
 
@@ -260,6 +275,8 @@ button.menutoggle {
 
 .parallax-content-img.custom {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parallax-green.form {
@@ -287,6 +304,11 @@ button.menutoggle {
 .video-container {
   position: relative;
   height: 100vh;
+  height: 10vh;
+}
+
+.video-container.homepage {
+  height: 100vh;
 }
 
 .video-container video {
@@ -296,7 +318,8 @@ button.menutoggle {
   opacity: 80%;
 }
 
-.video-logo {
+
+.video-logo.homepage {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,7 +329,15 @@ button.menutoggle {
   z-index: 0;
 }
 
-.content-button {
+.video-logo, .content-button {
+  display: none;
+}
+
+/* .content-button {
+  display: none;
+} */
+
+.content-button.homepage {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -319,7 +350,7 @@ button.video-button {
   background: none;
   border: none;
 }
-.video-button {
+.video-button.homepage {
   position: absolute;
   top: 84%;
   left: 5%;
@@ -601,8 +632,10 @@ footer li {
   color: var(--icterine);
 }
 
-.bottom-nav a:hover, a:focus,
-.contact a:hover, a:focus {
+.bottom-nav a:hover,
+a:focus,
+.contact a:hover,
+a:focus {
   color: var(--hunyadi);
 }
 
@@ -637,11 +670,17 @@ footer li {
 }
 
 @media (orientation: landscape) {
+  .video-container {
+    height: 25vh;
+  }
+  /* ROOMS  */
 
+  .parallax-content-white.rooms,
+  .parallax-content-white.contact {
+    width: 100vw;
+  }
   /* PARALLAX */
   .parallax-accordions {
-    display: flex;
-    max-height: calc(100vh - 160px);
     overflow-y: auto;
   }
 
@@ -680,20 +719,33 @@ footer li {
 }
 
 @media screen and (min-width: 667px) {
-
   /* VIDEO */
-  .video-logo {
-    width: 500px;
+
+  .video-logo,
+  .video-button {
+    display: none;
+  }
+
+  .video-logo.homepage {
+    width: 400px;
     transition: width 0.4s ease-in;
+    display: block;
+  }
+  .video-button.homepage {
+    display: block;
   }
 
   /* PARALLAX */
   .parallax-content-green {
     width: 95%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .parallax-content-white {
     width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .parallax-content-white.faq {
@@ -751,7 +803,7 @@ footer li {
 }
 
 @media screen and (min-width: 1024px) {
-
+  
   /* NAVIGATION */
   .navigation.open {
     display: flex;
@@ -821,9 +873,18 @@ footer li {
   }
 
   /* BACKGROUND VIDEO */
-  .video-logo {
+
+  .video-container {
+    height: 100vh;
+  }
+  .video-logo, .video-button {
+    display: block;
+  }
+
+  .video-logo, .video-logo.homepage {
     width: 800px;
     transition: width 0.4s ease-in;
+    display: block;
   }
 
   .video-container .content-video .content-button button {
@@ -831,6 +892,32 @@ footer li {
     height: 60px;
     transition: width 0.4s ease-in, height 0.4s ease-in;
   }
+
+  .content-button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    z-index: 0;
+  }
+
+  .video-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s ease-in;
+    z-index: 0;
+  }
+
+  /* display the vidoe button on other pages */
+.video-button {
+  position: absolute;
+  top: 84%;
+  left: 5%;
+  z-index: 0;
+}
 
   /* ACCORDIONS */
   .parallax-accordions {
@@ -854,7 +941,6 @@ footer li {
   }
 
   @media screen and (min-width: 1280px) {
-
     /* PARALLAX */
     /* .parallax-content-green,
     .parallax-content-white {

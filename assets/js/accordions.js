@@ -1,3 +1,5 @@
+'use strict'
+
 function initAccordion() {
   var acc = document.getElementsByClassName("accordion");
   var i;
