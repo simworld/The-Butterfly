@@ -318,7 +318,6 @@ h2 {
   opacity: 80%;
 }
 
-
 .video-logo.homepage {
   position: absolute;
   top: 50%;
@@ -329,7 +328,8 @@ h2 {
   z-index: 0;
 }
 
-.video-logo, .content-button {
+.video-logo,
+.content-button {
   display: none;
 }
 
@@ -803,7 +803,6 @@ a:focus {
 }
 
 @media screen and (min-width: 1024px) {
-  
   /* NAVIGATION */
   .navigation.open {
     display: flex;
@@ -877,11 +876,13 @@ a:focus {
   .video-container {
     height: 100vh;
   }
-  .video-logo, .video-button {
+  .video-logo,
+  .video-button {
     display: block;
   }
 
-  .video-logo, .video-logo.homepage {
+  .video-logo,
+  .video-logo.homepage {
     width: 800px;
     transition: width 0.4s ease-in;
     display: block;
@@ -912,12 +913,12 @@ a:focus {
   }
 
   /* display the vidoe button on other pages */
-.video-button {
-  position: absolute;
-  top: 84%;
-  left: 5%;
-  z-index: 0;
-}
+  .video-button {
+    position: absolute;
+    top: 84%;
+    left: 5%;
+    z-index: 0;
+  }
 
   /* ACCORDIONS */
   .parallax-accordions {
