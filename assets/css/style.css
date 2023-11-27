@@ -874,11 +874,18 @@ a:focus {
   /* BACKGROUND VIDEO */
 
   .video-container {
-    height: 100vh;
+    height: 16vh;
   }
   .video-logo,
   .video-button {
     display: block;
+  }
+
+  .content-video.homepage {
+    display: block;
+  }
+  .content-video {
+    display: none;
   }
 
   .video-logo,
